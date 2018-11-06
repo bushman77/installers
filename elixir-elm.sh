@@ -1,5 +1,9 @@
 #!/bin/bash
 
+##############################################################
+## THIS INSTALLS THE DEVELOPMENT PLATOFRM FOR ELIXIR ELM STACK
+##############################################################
+##############################################################
 
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 echo 'deb https://packages.erlang-solutions.com/debian xenial contrib' | sudo tee -a  /etc/apt/sources.list
