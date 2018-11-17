@@ -7,3 +7,4 @@ echo "execute pathogen#infect()" >> ~/.vimrc
 echo "map <C-n> :NERDTreeToggle<CR>" >> ~/.vimrc
 echo "map <F11> :vsplit" >> ~/.vimrc
 echo "map <F12> :ConqueTerm bash" ~/.vimrc
+
