@@ -4,6 +4,6 @@ cd ~/.vim/bundle && git clone https://github.com/wkentaro/conque.vim
 git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
 echo "colorscheme desert" >> ~/.vimrc
 echo "execute pathogen#infect()" >> ~/.vimrc
-echo "<C-n> :NERDTreeToggle<CR>" >> ~/.vimrc
-echo "<F11> :vsplit" >> ~/.vimrc
-echo "<F12> :ConqueTerm bash" ~/.vimrc
+echo "map <C-n> :NERDTreeToggle<CR>" >> ~/.vimrc
+echo "map <F11> :vsplit" >> ~/.vimrc
+echo "map <F12> :ConqueTerm bash" ~/.vimrc
