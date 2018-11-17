@@ -5,3 +5,5 @@ git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
 echo "colorscheme desert" >> ~/.vimrc
 echo "execute pathogen#infect()" >> ~/.vimrc
 echo "<C-n> :NERDTreeToggle<CR>" >> ~/.vimrc
+echo "<F11> :vsplit" >> ~/.vimrc
+echo "<F12> :ConqueTerm bash" ~/.vimrc
