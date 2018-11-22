@@ -15,3 +15,5 @@ make
 sudo make install
 
 sudo ldconfig /usr/local/lib
+
+identify -version
