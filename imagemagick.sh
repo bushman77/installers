@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #uncomment deb-src http://au.archive.ubuntu.com/ubuntu/ bionic main restricted
-
+sudo grep -rl '# deb-src http://au.archive.ubuntu.com/ubuntu/ bionic main restricted' ./ | xargs sudo sed -i 's/# deb-src http://au.archive.ubuntu.com/ubuntu/ bionic main restricted/deb-src http://au.archive.ubuntu.com/ubuntu/ bionic main restricted/g'
 sudo apt update
 sudo apt build-dep imagemagick
 
