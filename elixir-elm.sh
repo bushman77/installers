@@ -30,3 +30,6 @@ tar xzf binaries-for-linux.tar.gz
 sudo mv elm /usr/local/bin/
 
 npm install -g natives
+
+pip install scikit-learn
+pip install pandas
