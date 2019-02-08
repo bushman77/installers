@@ -21,7 +21,6 @@ sudo sysctl -p
 
 sudo mix archive.install https://github.com/phoenixframework/archives/raw/master/phx_new.ez
 
-sudo chown ubuntu -R /home/ubuntu/
 mix local.rebar --force
 mix local.hex --force
 
