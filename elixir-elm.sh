@@ -28,7 +28,7 @@ wget "https://github.com/elm/compiler/releases/download/0.19.0/binaries-for-linu
 tar xzf binaries-for-linux.tar.gz
 sudo mv elm /usr/local/bin/
 
-npm install -g natives
+sudo npm install -g natives
 
-pip install scikit-learn
-pip install pandas
+sudo pip install scikit-learn
+sudo pip install pandas
