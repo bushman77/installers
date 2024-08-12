@@ -39,5 +39,8 @@ export PS1="(chroot) ${PS1}"
 mkdir /efi
 mount /dev/sda1 /efi 
 
+emerge-webrsync
+emerge --sync --quiet
+
 
 echo "sys-kernel/linux-firmware @BINARY-REDISTRIBUTABLE" | tee -a /etc/portage/package.license 
