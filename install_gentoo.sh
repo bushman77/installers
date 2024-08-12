@@ -2,7 +2,7 @@
 
 ## SETUP PARTITIONS
 sudo su
-  parted -s $disk mklabel gpt
+  parted -s /dev/sda mklabel gpt
   parted -s --align=optimal $disk mkpart ESP fat32 1MiB 1Gib 
   parted -s $disk set 1 esp on
   #parted -s $disk set 1 bios_grub on
