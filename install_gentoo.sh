@@ -24,5 +24,12 @@ wget https://distfiles.gentoo.org/releases/amd64/autobuilds/20240811T170405Z/sta
 tar xpvf stage3-*.tar.xz --xattrs-include='*.*' --numeric-owner
 cp --dereference /etc/resolv.conf /mnt/gentoo/etc/
 
+mount --types proc /proc /mnt/gentoo/proc
+mount --rbind /sys /mnt/gentoo/sys 
+mount --make-rslave /mnt/gentoo/sys
+mount --rbind /dev /mnt/gentoo/dev 
+mount --make-rslave /mnt/gentoo/dev
+mount --bind /run /mnt/gentoo/run
+mount --make-slave /mnt/gentoo/run
 
 echo "sys-kernel/linux-firmware @BINARY-REDISTRIBUTABLE" | tee -a /etc/portage/package.license 
