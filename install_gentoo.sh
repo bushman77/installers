@@ -45,3 +45,5 @@ emerge --sync --quiet
 
 echo "sys-kernel/linux-firmware @BINARY-REDISTRIBUTABLE" | tee -a /etc/portage/package.license 
 ln -sf ../usr/share/zoneinfo/Europe/Brussels /etc/localtime
+env-update && source /etc/profile && export PS1="(chroot) ${PS1}"
+
