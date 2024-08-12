@@ -19,5 +19,8 @@ mkdir --parents /mnt/gentoo/efi
 mount /dev/sda3 /mnt/gentoo
 
 # Download stage 3 files
+cd /mnt/gentoo
+wget https://distfiles.gentoo.org/releases/amd64/autobuilds/20240811T170405Z/stage3-amd64-desktop-systemd-20240811T170405Z.tar.xz
+
 
 echo "sys-kernel/linux-firmware @BINARY-REDISTRIBUTABLE" | tee -a /etc/portage/package.license 
