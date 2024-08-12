@@ -2,6 +2,7 @@
 
 ## SETUP PARTITIONS
 sudo su
+emerge --ask app-editors vim
 parted -s /dev/sda mklabel gpt
 parted -s --align=optimal /dev/sda mkpart ESP fat32 1MiB 1Gib 
 parted -s /dev/sda set 1 esp on
