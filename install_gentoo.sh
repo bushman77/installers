@@ -36,4 +36,8 @@ chroot /mnt/gentoo /bin/bash
 source /etc/profile
 export PS1="(chroot) ${PS1}"
 
+mkdir /efi
+mount /dev/sda1 /efi 
+
+
 echo "sys-kernel/linux-firmware @BINARY-REDISTRIBUTABLE" | tee -a /etc/portage/package.license 
